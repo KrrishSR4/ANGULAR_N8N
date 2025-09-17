@@ -8,35 +8,56 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Productivity Dashboard Color Palette */
+    --background: 0 0% 96.1%; /* #F5F5F5 */
+    --foreground: 0 0% 13.1%; /* #212121 */
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 13.1%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 13.1%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: #4CAF50 (Green) */
+    --primary: 122 39% 49%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 122 39% 75%;
+    --primary-dark: 122 39% 35%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: #2196F3 (Blue) */
+    --secondary: 207 90% 54%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 207 90% 75%;
+    --secondary-dark: 207 90% 40%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Accent: #FF9800 (Orange) */
+    --accent: 36 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 36 100% 75%;
+    --accent-dark: 36 100% 35%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 0 0% 93.7%;
+    --muted-foreground: 0 0% 45.1%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 100%;
+    --ring: 122 39% 49%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom productivity variables */
+    --success: 122 39% 49%;
+    --warning: 36 100% 50%;
+    --info: 207 90% 54%;
+    --gradient-primary: linear-gradient(135deg, hsl(122 39% 49%), hsl(122 39% 35%));
+    --gradient-secondary: linear-gradient(135deg, hsl(207 90% 54%), hsl(207 90% 40%));
+    --gradient-accent: linear-gradient(135deg, hsl(36 100% 50%), hsl(36 100% 35%));
+    --shadow-elegant: 0 4px 20px -2px hsl(122 39% 49% / 0.1);
+    --shadow-card: 0 1px 3px 0 hsl(0 0% 0% / 0.1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +77,42 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 7.8%;
+    --foreground: 0 0% 96.1%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 11%;
+    --card-foreground: 0 0% 96.1%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 11%;
+    --popover-foreground: 0 0% 96.1%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 122 39% 49%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 122 39% 65%;
+    --primary-dark: 122 39% 25%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 207 90% 54%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 207 90% 65%;
+    --secondary-dark: 207 90% 30%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 36 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 36 100% 65%;
+    --accent-dark: 36 100% 25%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 122 39% 49%;
+
+    --shadow-elegant: 0 4px 20px -2px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 1px 3px 0 hsl(0 0% 0% / 0.3);
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +130,49 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-border rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground;
+  }
+}
+
+@layer components {
+  .sidebar-nav-item {
+    @apply flex items-center gap-3 px-3 py-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-muted transition-all duration-200 hover:scale-[1.02];
+  }
+
+  .sidebar-nav-item.active {
+    @apply bg-primary text-primary-foreground shadow-sm;
+  }
+
+  .dashboard-card {
+    @apply bg-card border rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1;
+  }
+
+  .task-item {
+    @apply bg-card border rounded-lg p-4 hover:shadow-md transition-all duration-200 hover:scale-[1.01] cursor-pointer;
+  }
+
+  .pomodoro-button {
+    @apply px-6 py-3 rounded-full font-medium transition-all duration-200 hover:scale-105 active:scale-95;
+  }
+
+  .progress-ring {
+    @apply transition-all duration-1000 ease-linear;
   }
 }
